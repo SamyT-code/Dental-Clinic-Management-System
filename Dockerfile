@@ -6,14 +6,14 @@ RUN apt-get update && apt-get install -y \
     libpq-dev \
     && docker-php-ext-install pgsql pdo pdo_pgsql
 
-# Ensure Apache serves the PHP directory correctly
+# Ensure Apache serves files from the PHP directory
 RUN sed -i 's|/var/www/html|/var/www/html/PHP|' /etc/apache2/sites-available/000-default.conf
 
 # Set the working directory
 WORKDIR /var/www/html/PHP
 
-# Copy the entire project into the container
-COPY Dental-Clinic-Management-System-main/ /var/www/html/
+# Copy all project files into the container
+COPY . /var/www/html/
 
 # Expose port 80
 EXPOSE 80
