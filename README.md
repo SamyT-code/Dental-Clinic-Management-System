@@ -1,6 +1,6 @@
 # Overview
 
-- Dental clinic website: https://dental-clinic-mgmt-service.herokuapp.com/index.php
+- Dental clinic website: https://dental-clinic-backend-hfkr.onrender.com/index.php
 - Demo video (en français): https://www.youtube.com/watch?v=8031YFqOKfg
 
 Login ID:

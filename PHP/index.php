@@ -138,6 +138,42 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
 
         <h2> No Account? <a href="register.php">Register here! </a> </h2> <br>
 
+        <!-- Test User Credentials Table -->
+        <div class="container">
+            <h2 class="text-center">Test User Credentials</h2>
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Role</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hygienist</td>
+                        <td>akiti7935</td>
+                        <td>ASDFGHJKL:123456</td>
+                    </tr>
+                    <tr>
+                        <td>Dentist</td>
+                        <td>cwmk3565</td>
+                        <td>ASDFGHJKL:123456</td>
+                    </tr>
+                    <tr>
+                        <td>Patient</td>
+                        <td>randommd5</td>
+                        <td>ASDFGHJKL:123456</td>
+                    </tr>
+                    <tr>
+                        <td>Receptionist</td>
+                        <td>bobmley1</td>
+                        <td>ASDFGHJKL:123456</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     </div>
 
 
