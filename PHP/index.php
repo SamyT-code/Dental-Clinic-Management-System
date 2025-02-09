@@ -4,8 +4,11 @@ session_start();
 
 include_once 'functions.php';
 include_once 'db.php';
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+
+// SUPRESS WARNINGS
+error_reporting(0);
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 
 $userAccounts = pg_fetch_all(pg_query($dbconn, "SELECT * FROM user_account;"));
 
